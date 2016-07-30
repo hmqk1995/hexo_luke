@@ -1,8 +1,13 @@
+body {
+  background: #f1f9fe;
+}
+
 /* 页面标题 */
 .heading {
   background: #6da8e3;
-  height: 200px;
+  height: 260px;
   color: #f2f9fe;
+  position: relative;
 }
 
 .heading > h1 {
@@ -11,9 +16,25 @@
   font-size: 46px;
 }
 
-@media (min-width: 992px) {
+.main-container .col-md-8 {
+  color: #205081;
+}
 
+/* 首页顶部小icon适应 */
+@media (max-width: 387px) {
+  #heading_icon {
+    width:320px!important;
+    margin-left: -160px!important;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-4.intropanel {
+    background: #ffffff;
+  }
 }
 .col-md-4.intropanel {
   color: #275280;
+
+  padding-top: 20px;
 }
