@@ -1,0 +1,17 @@
+/* 页面标题 */
+.heading {
+  background: #6da8e3;
+  height: 200px;
+  color: #f2f9fe;
+}
+
+.heading > h1 {
+  margin: 0;
+  padding: 40px 0 0 0;
+  font-size: 46px;
+}
+
+/* 主体部分 */
+.main-container {
+  
+}
