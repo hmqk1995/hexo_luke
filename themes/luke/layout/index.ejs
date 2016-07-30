@@ -38,14 +38,20 @@
 			<div class="row">
 				<div class="col-md-8">
           <% site.posts.each(function(post){ %>
-          <h2><%- post.title || '(no title)' %></h2>
+          <h2 style="
+          background: #e1e2dc;
+          padding: 26px;
+          border-radius: 14px;
+          "><a style="color: #cb9b79;" href=<%- post.link %>><%- post.title || '(no title)' %></a>
+            <small style="font-size:14px;display:block;color: #cb9b79;">发布于: <%= post.date %></small>
+          </h2>
 					<p>
 						<%- post.content %>
 					</p>
           <% }) %>
 				</div>
-				<div class="col-md-4">
-					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle"> <span class="label label-default">Label</span>
+				<div class="col-md-4 intropanel">
+          <!-- <div><span class="label label-default">这是个标签</span></div> -->
 					<dl>
 						<dt>
 							姓名
@@ -54,25 +60,10 @@
 							<%= config.author %>
 						</dd>
 						<dt>
-							Euismod
+							个人简介
 						</dt>
 						<dd>
-							Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-						</dd>
-						<dd>
-							Donec id elit non mi porta gravida at eget metus.
-						</dd>
-						<dt>
-							Malesuada porta
-						</dt>
-						<dd>
-							Etiam porta sem malesuada magna mollis euismod.
-						</dd>
-						<dt>
-							Felis euismod semper eget lacinia
-						</dt>
-						<dd>
-							Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+							这个人不是很懒，但也什么都没留下……
 						</dd>
 					</dl>
 				</div>

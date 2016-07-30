@@ -11,7 +11,9 @@
   font-size: 46px;
 }
 
-/* 主体部分 */
-.main-container {
-  
+@media (min-width: 992px) {
+
+}
+.col-md-4.intropanel {
+  color: #275280;
 }
