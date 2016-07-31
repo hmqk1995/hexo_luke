@@ -4,7 +4,7 @@ body {
 
 /* 页面标题 */
 .heading {
-  background: #6da8e3;
+  background: #6da8e3 url('/images/hello.jpg') no-repeat bottom center;
   height: 260px;
   color: #f2f9fe;
   position: absolute;
