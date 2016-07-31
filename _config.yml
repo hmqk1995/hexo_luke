@@ -68,4 +68,6 @@ theme: luke
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:hmqk1995/hmqk1995.github.io.git
+  branch: master
